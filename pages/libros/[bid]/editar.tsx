@@ -57,7 +57,10 @@ const BookEdit = ({ book }) => {
             />
             <button
             disabled={submitting}
-            >{submitting ? 'Enviando...' : 'Enviar'}</button>
+            data-cy="input-book-title"
+
+            >
+                {submitting ? 'Enviando...' : 'Enviar'}</button>
             {errors.title && (
             <span style={{
                 color:'red', display: 'block'
